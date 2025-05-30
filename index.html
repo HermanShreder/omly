@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Free OF Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100vh;
+      backdrop-filter: brightness(0.9);
+    }
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 30px 20px;
+      border-radius: 12px;
+      max-width: 90%;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .button {
+      font-size: 22px;
+      padding: 15px 30px;
+      background-color: #ff4081;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    .button:active {
+      background-color: #e73574;
+    }
+
+    .small-button {
+      font-size: 18px;
+      padding: 10px 20px;
+      background-color: #444;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+
+    .small-button:active {
+      background-color: #666;
+    }
+
+    .copy-info {
+      font-size: 20px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>💖 I'm waiting for you on my FREE OnlyFans page!</h1>
+    <p style="font-size: 22px;">👇 Tap to copy the link and paste it in your browser</p>
+
+    <button class="button" onclick="copyLink()">📋 Copy Link</button>
+
+    <div class="copy-info">or just copy my username 👉 <strong>@lily_sweety1</strong></div>
+    <button class="small-button" onclick="copyUsername()">📋 Copy Username</button>
+  </div>
+
+  <script>
+    function copyLink() {
+      const link = "https://onlyfans.com/lily_sweety1";
+      navigator.clipboard.writeText(link).then(() => {
+        alert("Link copied! Paste it in your browser 🌐");
+      });
+    }
+
+    function copyUsername() {
+      const username = "@lily_sweety1";
+      navigator.clipboard.writeText(username).then(() => {
+        alert("Username copied! 📋");
+      });
+    }
+  </script>
+
+</body>
+</html>
